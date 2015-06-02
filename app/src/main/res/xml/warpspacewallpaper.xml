@@ -1,0 +1,7 @@
+<wallpaper
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:thumbnail="@drawable/ic_launcher"
+    android:author="@string/authors"
+    android:description="@string/wallpaper_description"
+    android:settingsActivity="com.mastereric.warpspacelivewallpaper.WarpSpacePreferences"
+    />
