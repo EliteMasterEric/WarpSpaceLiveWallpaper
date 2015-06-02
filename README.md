@@ -8,6 +8,7 @@ The art used was made by /u/Jpgar_Pootis on Reddit:
 http://www.reddit.com/r/stevenuniverse/comments/37z4zk/i_just_digitally_redrew_the_warp_space_from_warp/
 
 Image Preview:
+
 ![vlcsnap-2015-06-01-21h39m10s161](https://cloud.githubusercontent.com/assets/4635334/7926907/b5d26072-08a6-11e5-95f2-59a68071c3ee.png)
 
 
