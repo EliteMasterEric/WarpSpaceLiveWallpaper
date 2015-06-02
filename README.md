@@ -13,7 +13,7 @@ Image Preview:
 
 ---
 
-Known Issues:
+##Known Issues:
 
 1. The wallpaper only displays on the leftmost screen for many users.
 
