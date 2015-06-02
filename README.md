@@ -11,6 +11,16 @@ Image Preview:
 
 ![vlcsnap-2015-06-01-21h39m10s161](https://cloud.githubusercontent.com/assets/4635334/7926907/b5d26072-08a6-11e5-95f2-59a68071c3ee.png)
 
+---
+
+Known Issues:
+
+1. The wallpaper only displays on the leftmost screen for many users.
+
+2. The app crashes when you attempt to access the settings.
+
+These iissues have been acknowledged and  fixes are being worked on.
+
 
 ---
 
