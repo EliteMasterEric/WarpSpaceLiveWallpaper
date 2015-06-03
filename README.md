@@ -13,17 +13,6 @@ Image Preview:
 
 ---
 
-##Known Issues:
-
-1. The wallpaper only displays on the leftmost screen for many users.
-
-2. The app crashes when you attempt to access the settings.
-
-These iissues have been acknowledged and  fixes are being worked on.
-
-
----
-
 This app features animated lightning, and parallax scrolling (the background scrolls as the user moves back and forth).
 
 Please feel free to report bugs in the Issues section or submit a pull request if you have a problem or bug fix!
