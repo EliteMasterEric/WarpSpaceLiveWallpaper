@@ -6,11 +6,21 @@
     <string name="summary_list_default_image">Image to use when animation is disabled.</string>
     <string name="title_checkbox_enable_animation">Enable Animation</string>
     <string name="summary_checkbox_enable_animation">Should animation be enabled (lightning)?</string>
-    <string name="source_title">Wallpaper Source</string>
+    <string name="source_title">Check out the Original Art</string>
     <string name="source_summary">Wallpaper made by /u/Jpgar_Pootis on Reddit</string>
     <string name="source_summary_lines">Wallpaper made by\n /u/Jpgar_Pootis\n on Reddit</string>
+    <string name="appmaker_summary">App made by /u/EliteMasterEric on Reddit</string>
     <string name="appmaker_summary_lines">App made by \n/u/EliteMasterEric\n on Reddit</string>
     <string name="about">About</string>
+    <string name="wallpaper_settings">Wallpaper Settings</string>
     <string name="authors">/u/EliteMasterEric and /u/Jpgar_Pootis"</string>
     <string name="button_enable">Enable Live Wallpaper</string>
+    <string name="github_title">Check out the Project on Github</string>
+    <string name="advanced">Advanced Settings</string>
+    <string name="button_log">Create System Log</string>
+    <string name="log_summary">Gathers information about screen size to aid in debugging.</string>
+    <string name="title_activity_warp_space_main">WarpSpaceMain</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 </resources>

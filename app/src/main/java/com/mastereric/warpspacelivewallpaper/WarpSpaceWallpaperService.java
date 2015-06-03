@@ -12,9 +12,6 @@ import android.view.SurfaceHolder;
 
 import java.util.Calendar;
 
-/**
- * Created by Eric on 5/23/2015.
- */
 public class WarpSpaceWallpaperService extends WallpaperService {
 
     public void onCreate() {
@@ -99,7 +96,6 @@ public class WarpSpaceWallpaperService extends WallpaperService {
             lastyPixels = yPixels;
         }
         void draw() {
-
             final SurfaceHolder holder = getSurfaceHolder();
 
             Canvas c = null;
@@ -109,28 +105,28 @@ public class WarpSpaceWallpaperService extends WallpaperService {
                 c.drawColor(Color.BLACK);
                 switch((int)Math.round(Math.random() * 20)) {
                     case 1:
-                        //(Math.abs(lastxPixels)/100)+-+
+                        //(lastxOffset+-+
                         imageDualLightning = BitmapFactory.decodeResource(getResources(), com.mastereric.warpspacelivewallpaper.R.drawable.duallightningc);
-                        c.drawBitmap(scaleCenterCrop(imageDualLightning, c.getHeight(), (int)(c.getHeight()*1.777), (int)((c.getHeight()*1.777-c.getWidth())*(Math.abs(lastxPixels)/100))), 0, 0, null);
-                        Log.w("WarpSpaceWallpaper", "WarpSpaceWallpaperEngine.draw" + c.getWidth() + "-" + c.getHeight() + "-" + (int) ((c.getHeight() * 1.777 - c.getWidth()) * (Math.abs(lastxPixels) / 100)));
+                        c.drawBitmap(scaleCenterCrop(imageDualLightning, c.getHeight(), (int)(c.getHeight()*1.777), (int)((c.getHeight()*1.777-c.getWidth())*(lastxOffset))), 0, 0, null);
+                        Log.w("WarpSpaceWallpaper", "WarpSpaceWallpaperEngine.draw" + c.getWidth() + "-" + c.getHeight() + "(" +(c.getHeight()*1.777-c.getWidth())+") -" + (int) ((c.getHeight() * 1.777 - c.getWidth()) * (Math.abs(lastxPixels) / 100)) + " ("+(Math.abs(lastxPixels)/ 100)+")");
                         imageDualLightning.recycle();
                         break;
                     case 2:
                         imageBottomLightning = BitmapFactory.decodeResource(getResources(), com.mastereric.warpspacelivewallpaper.R.drawable.bottomlightningc);
-                        c.drawBitmap(scaleCenterCrop(imageBottomLightning, c.getHeight(), (int)(c.getHeight()*1.777), (int)((c.getHeight()*1.777-c.getWidth())*(Math.abs(lastxPixels)/100))), 0, 0, null);
-                        Log.w("WarpSpaceWallpaper", "WarpSpaceWallpaperEngine.draw" + c.getWidth() + "-" + c.getHeight() + "-" + (int) ((c.getHeight() * 1.777 - c.getWidth()) * (Math.abs(lastxPixels) / 100)));
+                        c.drawBitmap(scaleCenterCrop(imageBottomLightning, c.getHeight(), (int)(c.getHeight()*1.777), (int)((c.getHeight()*1.777-c.getWidth())*(lastxOffset))), 0, 0, null);
+                        Log.w("WarpSpaceWallpaper", "WarpSpaceWallpaperEngine.draw" + c.getWidth() + "-" + c.getHeight() + "(" +(c.getHeight()*1.777-c.getWidth())+") -" + (int) ((c.getHeight() * 1.777 - c.getWidth()) * (Math.abs(lastxPixels) / 100)) + " ("+(Math.abs(lastxPixels)/ 100)+")");
                         imageBottomLightning.recycle();
                         break;
                     case 3:
                         imageTopLightning = BitmapFactory.decodeResource(getResources(), com.mastereric.warpspacelivewallpaper.R.drawable.toplightningc);
-                        c.drawBitmap(scaleCenterCrop(imageTopLightning, c.getHeight(), (int)(c.getHeight()*1.777), (int)((c.getHeight()*1.777-c.getWidth())*(Math.abs(lastxPixels)/100))), 0, 0, null);
-                        Log.w("WarpSpaceWallpaper", "WarpSpaceWallpaperEngine.draw" + c.getWidth() + "-" + c.getHeight() + "-" + (int) ((c.getHeight() * 1.777 - c.getWidth()) * (Math.abs(lastxPixels) / 100)));
+                        c.drawBitmap(scaleCenterCrop(imageTopLightning, c.getHeight(), (int)(c.getHeight()*1.777), (int)((c.getHeight()*1.777-c.getWidth())*(lastxOffset))), 0, 0, null);
+                        Log.w("WarpSpaceWallpaper", "WarpSpaceWallpaperEngine.draw" + c.getWidth() + "-" + c.getHeight() + "(" +(c.getHeight()*1.777-c.getWidth())+") -" + (int) ((c.getHeight() * 1.777 - c.getWidth()) * (Math.abs(lastxPixels) / 100)) + " ("+(Math.abs(lastxPixels)/ 100)+")");
                         imageTopLightning.recycle();
                         break;
                     default:
                         imageNoLightning = BitmapFactory.decodeResource(getResources(), com.mastereric.warpspacelivewallpaper.R.drawable.nolightningc);
-                        c.drawBitmap(scaleCenterCrop(imageNoLightning, c.getHeight(), (int) (c.getHeight() * 1.777), (int)((c.getHeight()*1.777-c.getWidth())*(Math.abs(lastxPixels)/100))), 0, 0, null);
-                        Log.w("WarpSpaceWallpaper", "WarpSpaceWallpaperEngine.draw" + c.getWidth() + "-" + c.getHeight() + "-" + (int)((c.getHeight()*1.777 - c.getWidth())*(Math.abs(lastxPixels)/100)));
+                        c.drawBitmap(scaleCenterCrop(imageNoLightning, c.getHeight(), (int) (c.getHeight() * 1.777), (int)((c.getHeight()*1.777-c.getWidth())*(lastxOffset))), 0, 0, null);
+                        Log.w("WarpSpaceWallpaper", "WarpSpaceWallpaperEngine.draw" + c.getWidth() + "-" + c.getHeight() + "(" +(c.getHeight()*1.777-c.getWidth())+") -" + (int) ((c.getHeight() * 1.777 - c.getWidth()) * (Math.abs(lastxPixels) / 100)) + " ("+(Math.abs(lastxPixels)/ 100)+")");
                         imageNoLightning.recycle();
                         break;
                 }

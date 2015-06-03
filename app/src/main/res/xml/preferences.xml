@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory
-        android:title="@string/enable_images">
-
-        <CheckBoxPreference
-            android:key="checkbox_enable_animation"
-            android:title="@string/title_checkbox_enable_animation"
-            android:summary="@string/summary_checkbox_enable_animation" />
-
-        <ListPreference
-            android:key="list_default_image"
-            android:title="@string/title_list_default_image"
-            android:summary="@string/summary_list_default_image"
-            android:defaultValue="1"
-            android:entries="@array/listArray"
-            android:entryValues="@array/listValues"/>
-
-    </PreferenceCategory>
+    <Preference
+            android:title="@string/button_enable"
+            android:key="enable_button"
+            android:summary="@string/source_summary"/>
 
     <PreferenceCategory
         android:title="@string/about">
@@ -27,6 +14,10 @@
             android:key="source_button"
             android:summary="@string/source_summary"/>
 
+        <Preference
+            android:title="@string/github_title"
+            android:key="github_button"
+            android:summary="@string/appmaker_summary"/>
 
     </PreferenceCategory>
 
